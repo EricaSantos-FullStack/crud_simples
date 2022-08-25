@@ -137,6 +137,11 @@
                 }
 
             };
+            // Montando a função para excluir os registros
+            this.Delete = function (item) {
+            this.countries.splice(item, 1);
+            this.FetchAll();
+            } 
 
         }
 
